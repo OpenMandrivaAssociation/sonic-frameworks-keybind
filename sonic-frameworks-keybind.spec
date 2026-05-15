@@ -6,7 +6,7 @@
 #define git 20240217
 
 Name: sonic-frameworks-keybind
-Version: 6.25.0
+Version: 6.26.0
 Release: %{?git:0.%{git}.}1
 URL:     https://github.com/Sonic-DE/sonic-frameworks-keybind
 # %if 0%{?git:1}
