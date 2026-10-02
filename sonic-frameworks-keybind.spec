@@ -7,7 +7,7 @@
 
 Name: sonic-frameworks-keybind
 Version: 6.28.0
-Release: %{?git:0.%{git}.}1
+Release: %{?git:0.%{git}.}2
 URL:     https://github.com/Sonic-DE/sonic-frameworks-keybind
 # %if 0%{?git:1}
 # Source0: https://invent.kde.org/frameworks/kglobalaccel/-/archive/master/kglobalaccel-master.tar.bz2#/kglobalaccel-%{git}.tar.bz2
