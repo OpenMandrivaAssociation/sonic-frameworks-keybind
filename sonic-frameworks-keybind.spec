@@ -7,7 +7,7 @@
 
 Name: sonic-frameworks-keybind
 Version: 6.28.0
-Release: %{?git:0.%{git}.}2
+Release: %{?git:0.%{git}.}3
 URL:     https://github.com/Sonic-DE/sonic-frameworks-keybind
 # %if 0%{?git:1}
 # Source0: https://invent.kde.org/frameworks/kglobalaccel/-/archive/master/kglobalaccel-master.tar.bz2#/kglobalaccel-%{git}.tar.bz2
@@ -68,7 +68,6 @@ Conflicts: %{_lib}KF6GlobalAccel-devel
 
 %install -a
 %find_lang %{name} --all-name --with-qt --with-html
-rm -rf %{buildroot}/%{_libdir}/cmake
 
 %files -f %{name}.lang
 %{_datadir}/qlogging-categories6/kglobalaccel.*
@@ -76,9 +75,7 @@ rm -rf %{buildroot}/%{_libdir}/cmake
 
 %files -n %{devname}
 %{_includedir}/KF6/KGlobalAccel
-
-# pending rename
-# %{_libdir}/cmake/KF6GlobalAccel
+%{_libdir}/cmake/KF6GlobalAccel
 
 %files -n %{libname}
 %{_libdir}/libKF6GlobalAccel.so*
